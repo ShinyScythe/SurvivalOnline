@@ -2985,8 +2985,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   allItems:
-  - {fileID: 5927460318095870303, guid: 5eb19e5328edabe4ba4214a177cfc26d, type: 3}
-  - {fileID: 2271856315683145374, guid: 7d0b1f591586d9d46b5e68428077717c, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
   canvasGroup: {fileID: 1451542595}
   itemPrefab: {fileID: 571950992518915849, guid: d1c1be89efde6514eb95862d27ad24ab, type: 3}
   slots:

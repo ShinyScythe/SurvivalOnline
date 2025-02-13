@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 5091521628295626274}
   - component: {fileID: 7436023845640592554}
   - component: {fileID: 3974975273379609690}
-  - component: {fileID: 2271856315683145374}
   - component: {fileID: 4414471736549704505}
+  - component: {fileID: 9154317068983877162}
   m_Layer: 9
   m_Name: Log
   m_TagString: Untagged
@@ -136,30 +136,6 @@ MonoBehaviour:
     positionTolerance: 0.1
     rotationAngleTolerance: 1
     scaleTolerance: 0.05
---- !u!114 &2271856315683145374
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6824565690627345562}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8eb4592aac94a343b69c6d9c72c8e3d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isSetup: 0
-  _prefabId: -2147483648
-  _componentIndex: -2147483648
-  _shouldBePooled: 0
-  _parent: {fileID: 0}
-  _invertedPathToNearestParent: 
-  _directChildren: []
-  _networkRules: {fileID: 0}
-  _visitiblityRules: {fileID: 0}
-  itemName: Log
-  itemPicture: {fileID: 21300000, guid: 49d367be45d0d3443b3b7cdaf5e1bb3e, type: 3}
-  rigidbody: {fileID: 4414471736549704505}
 --- !u!54 &4414471736549704505
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -187,6 +163,30 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &9154317068983877162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6824565690627345562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65a0256f976027478e81675dac2c354, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isSetup: 0
+  _prefabId: -2147483648
+  _componentIndex: -2147483648
+  _shouldBePooled: 0
+  _parent: {fileID: 0}
+  _invertedPathToNearestParent: 
+  _directChildren: []
+  _networkRules: {fileID: 0}
+  _visitiblityRules: {fileID: 0}
+  itemName: Log
+  itemPicture: {fileID: 21300000, guid: 49d367be45d0d3443b3b7cdaf5e1bb3e, type: 3}
+  rigidbody: {fileID: 4414471736549704505}
 --- !u!1 &8441035914640940093
 GameObject:
   m_ObjectHideFlags: 0

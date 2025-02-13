@@ -1,7 +1,7 @@
 using PurrNet;
 using UnityEngine;
 
-public class Item : AInteractable
+public abstract class Item : AInteractable
 {
     [SerializeField] private string itemName;
     [SerializeField] private Sprite itemPicture;
@@ -47,7 +47,17 @@ public class Item : AInteractable
         Pickup();
         print($"Picked up: {ItemName}");
     }
-    // TODO: Figure out why OnHover doesn't get called here.
+   
+    public virtual void UseItem()
+    {
+
+    }
+
+    public virtual void ConsumeItem()
+    {
+
+    }
+
     public override void OnHover()
     {
         base.OnHover();
