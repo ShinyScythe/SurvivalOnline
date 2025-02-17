@@ -1,10 +1,13 @@
 using UnityEngine;
 using PurrNet;
+using System;
 
 public class PlayerInventory : NetworkBehaviour
 
 {
     public static PlayerInventory localInventory;
+
+    [SerializeField] private KeyCode useItemKey, consumeItemKey;
 
     [SerializeField] private Transform itemPoint;
     private Item _itemInHand;
@@ -23,6 +26,35 @@ public class PlayerInventory : NetworkBehaviour
         if (!isOwner) { return; }
 
         localInventory = null;
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(useItemKey))
+        {
+            useItem();
+        }
+
+        if (Input.GetKeyDown(consumeItemKey))
+        {
+            ConsumeItem();
+        }
+    }
+
+    private void ConsumeItem()
+    {
+        if (!_itemInHand)
+            return;
+
+        _itemInHand.ConsumeItem();
+    }
+
+    private void useItem()
+    {
+        if (!_itemInHand)
+            return;
+
+        _itemInHand.UseItem();
     }
 
     public void EquipItem(Item item)

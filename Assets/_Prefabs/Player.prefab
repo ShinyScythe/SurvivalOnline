@@ -117,6 +117,8 @@ MonoBehaviour:
   _directChildren: []
   _networkRules: {fileID: 0}
   _visitiblityRules: {fileID: 0}
+  useItemKey: 101
+  consumeItemKey: 102
   itemPoint: {fileID: 7454794034640529143}
 --- !u!114 &1537156566761731248
 MonoBehaviour:

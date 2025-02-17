@@ -21,7 +21,7 @@ public class InteractionMananger : MonoBehaviour
     {
         HandleHovers();
 
-        if (!Input.GetMouseButtonDown(0) && !Input.GetKeyDown(KeyCode.E))
+        if (!Input.GetMouseButtonDown(0))
             return;
 
         if (!Physics.Raycast(_cam.transform.position, _cam.transform.forward, out RaycastHit hit, interactDistance, interactableLayer))
