@@ -24,6 +24,7 @@ public class PlayerController : NetworkBehaviour
     [SerializeField] private List<Renderer> playerRenderers;
     [SerializeField] private Transform itemPoint;
     [SerializeField] private Transform rightHand;
+    [SerializeField] private InventoryManager inventoryManager;
 
     private Camera _playerCamera;
     private CharacterController characterController;

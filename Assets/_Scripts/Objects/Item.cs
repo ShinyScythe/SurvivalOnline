@@ -32,6 +32,13 @@ public abstract class Item : AInteractable
             return;
         }
 
+        if (PlayerInventory.localInventory.IsHoldingItem(this))
+        {
+            Debug.Log("TEST: Attempted to take item in hand.");
+            return;
+        }
+        // TODO: Parse out equipment in FOV, currently takes item out of hand and duplicates
+
         inventoryManager.AddItem(this);
 
         Destroy(gameObject);

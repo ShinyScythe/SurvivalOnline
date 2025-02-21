@@ -38,7 +38,7 @@ public class InventoryManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.I))
         {
             bool isOpen = canvasGroup.alpha > 0;
-            ToggleInventory(!isOpen);
+            ToggleInventory(!isOpen); 
         }
     }
 
